@@ -59,10 +59,26 @@
 		C0C83445296B939400CF26A7 /* APS105 */ = {
 			isa = PBXGroup;
 			children = (
-				C0C8344D296B942F00CF26A7 /* lab0.c */,
-				C0DB6919296EFCA00053AF4F /* data_rep_operations.c */,
+				C0DB691C296EFD300053AF4F /* notes */,
+				C0DB691B296EFD2A0053AF4F /* labs */,
 			);
 			path = APS105;
+			sourceTree = "<group>";
+		};
+		C0DB691B296EFD2A0053AF4F /* labs */ = {
+			isa = PBXGroup;
+			children = (
+				C0C8344D296B942F00CF26A7 /* lab0.c */,
+			);
+			path = labs;
+			sourceTree = "<group>";
+		};
+		C0DB691C296EFD300053AF4F /* notes */ = {
+			isa = PBXGroup;
+			children = (
+				C0DB6919296EFCA00053AF4F /* data_rep_operations.c */,
+			);
+			path = notes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
