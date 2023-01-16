@@ -47,7 +47,7 @@ int lab1_q2(void) {
 //Next digit: 0
 //Least significant digit: 1
 
-int lab2_q3(void){
+int lab1_q3(void){
     int num, d1, d2, d3, d4;
     printf("Enter number to convert to base 2: ");
     scanf("%d", &num);
@@ -67,7 +67,7 @@ int lab2_q3(void){
     return 0;
 }
 
-int lab3_q3(void){
+int lab1_q4(void){
     const double CmPerInch = 2.54;
     const double CmPerMetre = 100.00;
     const int InchesPerFoot = 12;
