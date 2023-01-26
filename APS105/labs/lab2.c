@@ -59,19 +59,76 @@ int lab2_q2(void) { //q2
     return 0;
 }
 
-int main (void){ //q3
+int lab2_q3(void){ //q3
+    double weight, height, BMI;
+    char c1, c2;
     
     printf("Enter the body weight: ");
     //handle and convert input in kilograms or pounds
+    scanf("%lf %c %c", &weight, &c1, &c2); //simultaneous digit and char scanning
+
+    
+    if(c1 == 'l' && c2 == 'b'){ //if the user enters weight in pounds
+        weight/=2.205; //convert from pounds to kilos5
+    }
+    
     
     printf("Enter the height: ");
     //handle and convert input in inches, feet, or meters
+    scanf("%lf %c %c", &height, &c1, &c2); //simultaneous digit and char scanning
     
-    printf("The Body Mass Index (BMI) is: ");
-    //BMI = (weight in kilos) divided by (height in m)^2
+    if(c1 == 'i' && c2 == 'n'){ //if user enters height in inches
+        height/=39.37; //convert from inches to meters
+    }
     
-    //classify category of weight
+    else if(c1 == 'f' && c2 == 't'){ //if user enters height in feet
+        height/=3.281; //convert from feet to meters
+    }
     
+    else{
+        printf("Invalid input!");
+    }
+    
+    BMI = weight/pow(height,2);
+    printf("\nThe Body Mass Index (BMI) is: %.1f", BMI);
+    printf("\nCategory:");
+    
+    //classify weight category
+    if(BMI < 18.5){
+        printf(" Underweight");
+    }
+
+    else if(BMI >=18.5 && BMI <25){
+        printf(" Healthy Weight");
+    }
+
+    else if(BMI >=25 && BMI <30){
+        printf(" Overweight");
+    }
+    
+    else if (BMI >=30){
+        printf(" Obesity");
+    }
+
+    return 0;
+}
+
+int main(void) {
+    int encComb;
+    printf("Enter an encrypted 4-digit combination: ");
+    scanf("%d", &encComb);
+    // Determine the 4 digits of the encrypted combinaiton.
+    int d4, d3, d2, d1;
+    encComb = encComb / 1000;
+    d4 = encComb % 1000;
+    encComb = encComb / 100;
+    d3 = encComb % 100;
+    encComb = encComb / 10;
+    d2 = encComb % 10;
+    d1 = encComb;
+    // printing the decryped combination: d4 and d1 are swaped. d3 and d2 are
+    // are 9's complemented
+    printf("\nThe real combination is: %d%d%d%d\n", d1, 9 - d3, 9 - d2, d4);
     return 0;
 }
 
