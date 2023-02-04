@@ -6,7 +6,11 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
+#include <stdbool.h>
+#include <ctype.h>
+
 
 int biggestDigit(int num){ //find the largest digit in any number
     int large = 0;
@@ -120,5 +124,81 @@ int lab3_q1(void){ //q1
 
     }
     
+    return 0;
+    
 }
+
+int lab3(void){ //q2
+    int r, x;
+    printf("Enter the radius of the circle: ");
+    scanf("%d", &r);
+    
+    for(int y = -r; y<=r; y++){ //go through every row
+        x = sqrt(pow(r,2)-pow(y,2));
+        
+        for(int i = -r; i<=r; i++){ //go through every entry in a singular row
+            if (abs(i) <= abs(x)){
+                printf("o");
+            }
+            
+            else{
+                printf(".");
+            }
+        }
+        
+        printf("\n");
+    }
+    
+    return 0;
+}
+
+int lab3_q3(void) { //q3
+  char userChar;
+  int sum = 0, sign = +1;
+  bool number = true;
+  printf("Enter sequence of characters with numbers to add: ");
+    
+  do {
+    scanf(" %c", &userChar);
+    if (number) { //user is expected to enter a number
+        
+      while (userChar < '0' || userChar > '9') { //if int is not valid
+        printf("Invalid! Re-enter number.\n");
+        scanf(" %c", &userChar);
+      }
+
+      number = false;
+      sum += sign * (userChar - '0'); //converting the char into an int, multiplying by the sign
+        if(sum<0){
+            break;
+        }
+    }
+      
+      scanf(" %c", &userChar);
+     //user is expected to enter a char
+      if(!number){
+          while (userChar != '+' && userChar != '-') { //if char is not valid
+            printf("Invalid! Re-enter sign.\n");
+            scanf(" %c", &userChar);
+          }
+
+          if (userChar == '+') {
+            sign = 1;
+          }
+
+          else if (userChar == '-'){
+            sign = -1;
+          }
+          
+          number = true;
+      }
+      
+//      printf("sum after the iteration: %d \n", sum);
+//      printf("sign after the iteration: %d \n", sign);
+  
+  } while (sum > 0);
+  printf("Sum fell below zero.\n");
+  return 0;
+}
+
 
