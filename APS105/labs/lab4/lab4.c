@@ -15,7 +15,7 @@
 int getAscendingOrderedDigits(int);
 int getNumber(void);
 int reverseNumber(int);
-int getNumDigits(int);
+int getDigits(int);
 
 int lab4_q1(void){ //q1
     int num = getNumber();
@@ -46,7 +46,7 @@ int lab4_q1(void){ //q1
         
 
         num = getNumber(); //step 1
-        diff = getNumber(); //reset difference
+        diff = num; //reset difference
         counter = 1; //reset counter
 
     }
@@ -99,11 +99,11 @@ int getNumber(void){ //prompts user to enter a number and returns the given numb
             return -1; //premature return
         }
         
-        else if(getNumDigits(input) > 4){ //if input is too large
+        else if(getDigits(input) > 4){ //if input is too large
             printf("Error: the number is too large.\n");
         }
         
-        else if(getNumDigits(input) < 4){ //input is too small
+        else if(getDigits(input) < 4){ //input is too small
             printf("Error: the number is too small.\n");
         }
         
@@ -126,22 +126,22 @@ int reverseNumber(int num){ //reverses any four digit number
         num/=10;
     }
     
-    if(getNumDigits(rev) == 1){ //if reversed number is like 0001
+    if(getDigits(rev) == 1){ //if reversed number is like 0001
         rev*=1000;
     }
     
-    else if(getNumDigits(rev) == 2){ //if reversed number is like 0011
+    else if(getDigits(rev) == 2){ //if reversed number is like 0011
         rev*=100;
     }
     
-    else if(getNumDigits(rev) == 3){ //if reversed number is like 0111
+    else if(getDigits(rev) == 3){ //if reversed number is like 0111
         rev*=10;
     }
     
     return rev;
 }
 
-int getNumDigits(int num) { //returns number of digits
+int getDigits(int num) { //returns number of digits
   int count = 0;
     
   while (num != 0) {
