@@ -6,7 +6,7 @@ bool validateChoices(int choices[], const int ChoicesNum, const int BoxesNum);
 void takeUserChoices(int userOne[], int userTwo[], const int ChoicesNum, const int BoxesNum);
 void populateBoxes(int boxes[], const int BoxesNum);
 
-int main(void) {
+int main_lab5(void) {
   const int BoxesNum = 20;
   const int ChoicesNum = 5;
   int boxes[BoxesNum], userOne[ChoicesNum], userTwo[ChoicesNum];
