@@ -63,18 +63,18 @@ int lab6_q1(void) {
   return 0;
 }
 
-void getInput(int* row, int* col, int Size) {
-    
-    printf("Enter user input: ");
-    scanf("%d %d", row, col);
-    
-    while(!validRowCol(*row, *col, Size)){
-        printf("Please enter your row and col to be between 0 and Size - 1: ");
-        scanf("%d %d", row, col);
-    }
-    
-
-}
+//void getInput(int* row, int* col, int Size) {
+//    
+//    printf("Enter user input: ");
+//    scanf("%d %d", row, col);
+//    
+//    while(!validRowCol(*row, *col, Size)){
+//        printf("Please enter your row and col to be between 0 and Size - 1: ");
+//        scanf("%d %d", row, col);
+//    }
+//    
+//
+//}
 
 //bool validRowCol(int row, int col, int Size) {
 //    if(row <= (Size-1) && row >= 0 && col <= (Size-1) && col >= 0){
@@ -85,40 +85,40 @@ void getInput(int* row, int* col, int Size) {
 //    
 //}
 
-void getLevelAndDimensions(int* Size, int* levelOfDiff, const int maxDim) {
-    int level = 0, dimen = 0;
-    printf("Enter the difficulty level: ");
-    scanf("%d", &level);
-    
-    while(level < 1 || level > maxDim){
-        printf("Please enter a difficulty level between 1 and %d: ", maxDim);
-        scanf("%d", &level);
-    }
-    
-    *levelOfDiff = level;
-    
-    printf("Enter the dimensions of the grid: ");
-    scanf("%d", &dimen);
-    
-    //dimensions must be >= difficulty level and less than max dimension
-    while((dimen < *levelOfDiff) || (dimen > maxDim)){
-        printf("Please enter dimensions >= %d: ", *levelOfDiff);
-        scanf("%d", &dimen);
-        //printf("\ndimen: %d\n", dimen);
-    }
-    
-    *Size = dimen;
-    //printf("\nsize: %d\n", *Size);
-    
-    return; //if the dimension is valid
-}
+//void getLevelAndDimensions(int* Size, int* levelOfDiff, const int maxDim) {
+//    int level = 0, dimen = 0;
+//    printf("Enter the difficulty level: ");
+//    scanf("%d", &level);
+//    
+//    while(level < 1 || level > maxDim){
+//        printf("Please enter a difficulty level between 1 and %d: ", maxDim);
+//        scanf("%d", &level);
+//    }
+//    
+//    *levelOfDiff = level;
+//    
+//    printf("Enter the dimensions of the grid: ");
+//    scanf("%d", &dimen);
+//    
+//    //dimensions must be >= difficulty level and less than max dimension
+//    while((dimen < *levelOfDiff) || (dimen > maxDim)){
+//        printf("Please enter dimensions >= %d: ", *levelOfDiff);
+//        scanf("%d", &dimen);
+//        //printf("\ndimen: %d\n", dimen);
+//    }
+//    
+//    *Size = dimen;
+//    //printf("\nsize: %d\n", *Size);
+//    
+//    return; //if the dimension is valid
+//}
 
-void printBoard(int Size, int grid[][Size]) { //prints the contents of the grid
-    for(int i = 0; i<Size; i++){
-        for(int j = 0; j<Size; j++){
-            printf("%d", grid[i][j]);
-        }
-        printf("\n");
-    }
-    
-}
+//void printBoard(int Size, int grid[][Size]) { //prints the contents of the grid
+//    for(int i = 0; i<Size; i++){
+//        for(int j = 0; j<Size; j++){
+//            printf("%d", grid[i][j]);
+//        }
+//        printf("\n");
+//    }
+//    
+//}

@@ -72,97 +72,97 @@ int lab6_q2(void) {
   return 0;
 }
 
-int calculateScoreInDir(int row, int col, int direction, int Size, char userArray[][Size]) {
-    int sum = 0, OGrow = row, OGcol = col;
-    
-    if((int)userArray[row][col] == 48){ //if initial coord = 0
-        return sum;
-    }
-    
-    
-        //keep adding 1 to the score until we hit a 0 or if the coordinate does not exist
-    
-        while(validRowCol(row, col, Size) && (int)userArray[row][col] == 49){ //as long as we are within the boundaries of the grid
-            
-//            if((int)userArray[row][col] == 49){
-//                sum++;
-//            }else { //if we hit a 0
-//                break;
-//            }
-            sum++;
-            updateRowCol(&row, &col, direction, true); //forward
-            
-        }
-        
-        //start again from original coordinate to go backwards
-        row = OGrow;
-        col = OGcol;
-        
-        while(validRowCol(row, col, Size) && (int)userArray[row][col] == 49){ //as long as we are within the boundaries of the grid
-            //printf("userArray[row][col]: %d", userArray[row][col]);
-            
-//            if((int)userArray[row][col] == 49){
-//                sum++;
-//            }else{ //if we hit a 0
-//                break;
-//            }
-            sum++;
-            updateRowCol(&row, &col, direction, false); //backward
-        }
-        
-        return sum;
-    
-    
-}
+//int calculateScoreInDir(int row, int col, int direction, int Size, char userArray[][Size]) {
+//    int sum = 0, OGrow = row, OGcol = col;
+//    
+//    if((int)userArray[row][col] == 48){ //if initial coord = 0
+//        return sum;
+//    }
+//    
+//    
+//        //keep adding 1 to the score until we hit a 0 or if the coordinate does not exist
+//    
+//        while(validRowCol(row, col, Size) && (int)userArray[row][col] == 49){ //as long as we are within the boundaries of the grid
+//            
+////            if((int)userArray[row][col] == 49){
+////                sum++;
+////            }else { //if we hit a 0
+////                break;
+////            }
+//            sum++;
+//            updateRowCol(&row, &col, direction, true); //forward
+//            
+//        }
+//        
+//        //start again from original coordinate to go backwards
+//        row = OGrow;
+//        col = OGcol;
+//        
+//        while(validRowCol(row, col, Size) && (int)userArray[row][col] == 49){ //as long as we are within the boundaries of the grid
+//            //printf("userArray[row][col]: %d", userArray[row][col]);
+//            
+////            if((int)userArray[row][col] == 49){
+////                sum++;
+////            }else{ //if we hit a 0
+////                break;
+////            }
+//            sum++;
+//            updateRowCol(&row, &col, direction, false); //backward
+//        }
+//        
+//        return sum;
+//    
+//    
+//}
 
-void updateRowCol(int* row, int* col, int dir, bool forward) {
-    if(forward){ //direction is forward
-        if(dir == 0){
-            (*row)--;
-        }
-        
-        else if(dir == 1){
-            (*row)--;
-            (*col)++;
-        }
-        
-        else if(dir == 2){
-            (*col)++;
-        }
-        
-        else if(dir == 3){
-            (*row)--;
-            (*col)--;
-        }
-    }
-    
-    else { //direction is not forward
-        if(dir == 0){
-            (*row)++;
-        }
-        
-        else if(dir == 1){
-            (*row)++;
-            (*col)--;
-        }
-        
-        else if(dir == 2){
-            (*col)--;
-        }
-        
-        else if(dir == 3){
-            (*row)++;
-            (*col)++;
-        }
-    }
-}
+//void updateRowCol(int* row, int* col, int dir, bool forward) {
+//    if(forward){ //direction is forward
+//        if(dir == 0){
+//            (*row)--;
+//        }
+//
+//        else if(dir == 1){
+//            (*row)--;
+//            (*col)++;
+//        }
+//
+//        else if(dir == 2){
+//            (*col)++;
+//        }
+//
+//        else if(dir == 3){
+//            (*row)--;
+//            (*col)--;
+//        }
+//    }
+//
+//    else { //direction is not forward
+//        if(dir == 0){
+//            (*row)++;
+//        }
+//
+//        else if(dir == 1){
+//            (*row)++;
+//            (*col)--;
+//        }
+//
+//        else if(dir == 2){
+//            (*col)--;
+//        }
+//
+//        else if(dir == 3){
+//            (*row)++;
+//            (*col)++;
+//        }
+//    }
+//}
 
 //bool validRowCol(int row, int col, int Size) {
 //  // from part 1
 //    if(row <= (Size-1) && row >= 0 && col <= (Size-1) && col >= 0){
 //        return true;
 //    }
-//    
+//
 //    else{
 //        return false;
 //    }
