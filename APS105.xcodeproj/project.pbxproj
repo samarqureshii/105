@@ -13,6 +13,7 @@
 		C06E0CC929B2B21A00F6301C /* lab6_q3.c in Sources */ = {isa = PBXBuildFile; fileRef = C06E0CC829B2B21A00F6301C /* lab6_q3.c */; };
 		C06E0CCB29B2B23400F6301C /* lab6_q4.c in Sources */ = {isa = PBXBuildFile; fileRef = C06E0CCA29B2B23400F6301C /* lab6_q4.c */; };
 		C0837E7329D530E800CA6DEA /* reversi.c in Sources */ = {isa = PBXBuildFile; fileRef = C0837E7229D530E800CA6DEA /* reversi.c */; };
+		C0837E7729D5C21A00CA6DEA /* lab8.c in Sources */ = {isa = PBXBuildFile; fileRef = C0837E7629D5C21A00CA6DEA /* lab8.c */; };
 		C0C8344E296B942F00CF26A7 /* lab0.c in Sources */ = {isa = PBXBuildFile; fileRef = C0C8344D296B942F00CF26A7 /* lab0.c */; };
 		C0CC9EBB299A7FBF00801D7F /* lab5.c in Sources */ = {isa = PBXBuildFile; fileRef = C0CC9EBA299A7FBF00801D7F /* lab5.c */; };
 		C0CC9EC0299C3FFF00801D7F /* lab5_q2.c in Sources */ = {isa = PBXBuildFile; fileRef = C0CC9EBF299C3FFF00801D7F /* lab5_q2.c */; };
@@ -20,9 +21,7 @@
 		C0CC9EC529A2F3ED00801D7F /* lab5_q4.c in Sources */ = {isa = PBXBuildFile; fileRef = C0CC9EC429A2F3ED00801D7F /* lab5_q4.c */; };
 		C0DB691A296EFCA00053AF4F /* data_rep_operations.c in Sources */ = {isa = PBXBuildFile; fileRef = C0DB6919296EFCA00053AF4F /* data_rep_operations.c */; };
 		C0E42D5729735C0700C5B7CF /* lab1.c in Sources */ = {isa = PBXBuildFile; fileRef = C0E42D5629735C0700C5B7CF /* lab1.c */; };
-		C0E42D5A297ADB6C00C5B7CF /* tut1.c in Sources */ = {isa = PBXBuildFile; fileRef = C0E42D59297ADB6C00C5B7CF /* tut1.c */; };
 		C0E42D5F297EFBB700C5B7CF /* lab2.c in Sources */ = {isa = PBXBuildFile; fileRef = C0E42D5E297EFBB700C5B7CF /* lab2.c */; };
-		C0E42D63298416DE00C5B7CF /* tut2.c in Sources */ = {isa = PBXBuildFile; fileRef = C0E42D62298416DE00C5B7CF /* tut2.c */; };
 		C0E42D65298AC33300C5B7CF /* lab3.c in Sources */ = {isa = PBXBuildFile; fileRef = C0E42D64298AC33300C5B7CF /* lab3.c */; };
 		C0E42D6729940F6900C5B7CF /* lab4.c in Sources */ = {isa = PBXBuildFile; fileRef = C0E42D6629940F6900C5B7CF /* lab4.c */; };
 		C0E42D6A2997D8DA00C5B7CF /* lab4_q2.c in Sources */ = {isa = PBXBuildFile; fileRef = C0E42D692997D8DA00C5B7CF /* lab4_q2.c */; };
@@ -50,6 +49,8 @@
 		C06E0CCA29B2B23400F6301C /* lab6_q4.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lab6_q4.c; sourceTree = "<group>"; };
 		C0837E7129D530E800CA6DEA /* reversi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reversi.h; sourceTree = "<group>"; };
 		C0837E7229D530E800CA6DEA /* reversi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = reversi.c; sourceTree = "<group>"; };
+		C0837E7529D5C21A00CA6DEA /* lab8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lab8.h; sourceTree = "<group>"; };
+		C0837E7629D5C21A00CA6DEA /* lab8.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lab8.c; sourceTree = "<group>"; };
 		C0C83443296B939400CF26A7 /* APS105 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = APS105; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C8344D296B942F00CF26A7 /* lab0.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lab0.c; sourceTree = "<group>"; };
 		C0CC9EBA299A7FBF00801D7F /* lab5.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lab5.c; sourceTree = "<group>"; };
@@ -58,9 +59,7 @@
 		C0CC9EC429A2F3ED00801D7F /* lab5_q4.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lab5_q4.c; sourceTree = "<group>"; };
 		C0DB6919296EFCA00053AF4F /* data_rep_operations.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = data_rep_operations.c; sourceTree = "<group>"; };
 		C0E42D5629735C0700C5B7CF /* lab1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lab1.c; sourceTree = "<group>"; };
-		C0E42D59297ADB6C00C5B7CF /* tut1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tut1.c; sourceTree = "<group>"; };
 		C0E42D5E297EFBB700C5B7CF /* lab2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lab2.c; sourceTree = "<group>"; };
-		C0E42D62298416DE00C5B7CF /* tut2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tut2.c; sourceTree = "<group>"; };
 		C0E42D64298AC33300C5B7CF /* lab3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lab3.c; sourceTree = "<group>"; };
 		C0E42D6629940F6900C5B7CF /* lab4.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lab4.c; sourceTree = "<group>"; };
 		C0E42D692997D8DA00C5B7CF /* lab4_q2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lab4_q2.c; sourceTree = "<group>"; };
@@ -99,6 +98,15 @@
 			path = lab7;
 			sourceTree = "<group>";
 		};
+		C0837E7429D5C1FE00CA6DEA /* lab8 */ = {
+			isa = PBXGroup;
+			children = (
+				C0837E7529D5C21A00CA6DEA /* lab8.h */,
+				C0837E7629D5C21A00CA6DEA /* lab8.c */,
+			);
+			path = lab8;
+			sourceTree = "<group>";
+		};
 		C0C8343A296B939400CF26A7 = {
 			isa = PBXGroup;
 			children = (
@@ -118,7 +126,6 @@
 		C0C83445296B939400CF26A7 /* APS105 */ = {
 			isa = PBXGroup;
 			children = (
-				C0E42D58297ADB5500C5B7CF /* tutorials */,
 				C0DB691C296EFD300053AF4F /* notes */,
 				C0DB691B296EFD2A0053AF4F /* labs */,
 			);
@@ -147,6 +154,7 @@
 				C0CC9EBE299C3FC900801D7F /* lab5 */,
 				C06E0CC329B142CE00F6301C /* lab6 */,
 				C0837E6D29D5309000CA6DEA /* lab7 */,
+				C0837E7429D5C1FE00CA6DEA /* lab8 */,
 			);
 			path = labs;
 			sourceTree = "<group>";
@@ -158,15 +166,6 @@
 				C06E0CC129A7C88E00F6301C /* midterm.c */,
 			);
 			path = notes;
-			sourceTree = "<group>";
-		};
-		C0E42D58297ADB5500C5B7CF /* tutorials */ = {
-			isa = PBXGroup;
-			children = (
-				C0E42D59297ADB6C00C5B7CF /* tut1.c */,
-				C0E42D62298416DE00C5B7CF /* tut2.c */,
-			);
-			path = tutorials;
 			sourceTree = "<group>";
 		};
 		C0E42D682997D84B00C5B7CF /* lab4 */ = {
@@ -246,9 +245,9 @@
 				C0CC9EC3299C50F800801D7F /* lab5_q3.c in Sources */,
 				C0E42D5F297EFBB700C5B7CF /* lab2.c in Sources */,
 				C0E42D65298AC33300C5B7CF /* lab3.c in Sources */,
-				C0E42D5A297ADB6C00C5B7CF /* tut1.c in Sources */,
 				C0C8344E296B942F00CF26A7 /* lab0.c in Sources */,
 				C06E0CC229A7C88E00F6301C /* midterm.c in Sources */,
+				C0837E7729D5C21A00CA6DEA /* lab8.c in Sources */,
 				C0837E7329D530E800CA6DEA /* reversi.c in Sources */,
 				C0E42D6729940F6900C5B7CF /* lab4.c in Sources */,
 				C0E42D6A2997D8DA00C5B7CF /* lab4_q2.c in Sources */,
@@ -256,7 +255,6 @@
 				C0E42D6C2997E03E00C5B7CF /* lab4_q3.c in Sources */,
 				C0DB691A296EFCA00053AF4F /* data_rep_operations.c in Sources */,
 				C06E0CCB29B2B23400F6301C /* lab6_q4.c in Sources */,
-				C0E42D63298416DE00C5B7CF /* tut2.c in Sources */,
 				C0E42D5729735C0700C5B7CF /* lab1.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
