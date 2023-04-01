@@ -186,7 +186,7 @@ void showMoves(char board[][26], int n, char colour){ //show all possible player
     
 }
 
-void enterMove(char board[][26], int n){ //user enters a move
+void makeMove(char board[][26], int n){ //user makes a move
     bool flag = false;
     const int directions[8][2]={{-1,-1},
                                 {-1, 0},
@@ -260,8 +260,11 @@ int main(void) {
     showMoves(board, n, 'W'); //show all moves for white
     showMoves(board, n, 'B'); //show all moves for black
     
-    //step 4, ask user to input a move, check for validity & print final board
-    enterMove(board, n);
+    //step 4, ask user to input a move, check for validity
+    makeMove(board, n);
+    
+    //step 5, print final board config then terminate
+//    printBoard(board,*n);
 
   return 0;
     
