@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C01138C029D9FAFB0003486A /* lab8_part2.c in Sources */ = {isa = PBXBuildFile; fileRef = C01138BF29D9FAFB0003486A /* lab8_part2.c */; };
 		C06E0CC529B1432100F6301C /* lab6_q1.c in Sources */ = {isa = PBXBuildFile; fileRef = C06E0CC429B1432000F6301C /* lab6_q1.c */; };
 		C06E0CC729B2B20700F6301C /* lab6_q2.c in Sources */ = {isa = PBXBuildFile; fileRef = C06E0CC629B2B20700F6301C /* lab6_q2.c */; };
 		C06E0CC929B2B21A00F6301C /* lab6_q3.c in Sources */ = {isa = PBXBuildFile; fileRef = C06E0CC829B2B21A00F6301C /* lab6_q3.c */; };
@@ -40,6 +41,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C01138BF29D9FAFB0003486A /* lab8_part2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lab8_part2.c; sourceTree = "<group>"; };
 		C06E0CC429B1432000F6301C /* lab6_q1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lab6_q1.c; sourceTree = "<group>"; };
 		C06E0CC629B2B20700F6301C /* lab6_q2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lab6_q2.c; sourceTree = "<group>"; };
 		C06E0CC829B2B21A00F6301C /* lab6_q3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lab6_q3.c; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				C0837E7529D5C21A00CA6DEA /* lab8.h */,
 				C0837E7629D5C21A00CA6DEA /* lab8.c */,
+				C01138BF29D9FAFB0003486A /* lab8_part2.c */,
 			);
 			path = lab8;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				C0C8344E296B942F00CF26A7 /* lab0.c in Sources */,
 				C0837E7729D5C21A00CA6DEA /* lab8.c in Sources */,
 				C0837E7329D530E800CA6DEA /* reversi.c in Sources */,
+				C01138C029D9FAFB0003486A /* lab8_part2.c in Sources */,
 				C0E42D6729940F6900C5B7CF /* lab4.c in Sources */,
 				C0E42D6A2997D8DA00C5B7CF /* lab4_q2.c in Sources */,
 				C0E42D6E2997E3F600C5B7CF /* lab4_test.c in Sources */,
